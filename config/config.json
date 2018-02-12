@@ -1,0 +1,17 @@
+{
+  "development": {
+    "username": "root",
+    "password": "root",
+    "database": "yudiz_reward_x",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "port":8889
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

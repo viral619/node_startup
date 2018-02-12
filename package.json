@@ -1,0 +1,30 @@
+{
+  "name": "basic-structure",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "nodemon index.js",
+    "migrate:reset": "node_modules/.bin/sequelize db:migrate:undo:all",
+    "migrate": "node_modules/.bin/sequelize db:migrate",
+    "key:private": "ssh-keygen -t rsa -b 2048 -f bcrypt-private.key",
+    "key:public": "openssl rsa -in bcrypt-private.key -pubout -outform PEM -out bcrypt-public.key"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11",
+    "sequelize-cli": "^3.2.0"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "config": "^1.29.2",
+    "dotenv": "^5.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-validator": "^4.3.0",
+    "jsonwebtoken": "^8.1.1",
+    "lodash": "^4.17.5",
+    "multer": "^1.3.0",
+    "mysql2": "^1.5.1",
+    "nodemailer": "^4.4.2",
+    "randomstring": "^1.1.5",
+    "sequelize": "^4.32.2"
+  }
+}
