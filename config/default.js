@@ -4,7 +4,7 @@ const path = require("path");
 const BASE_PATH = path.join(__dirname + "./../");
 const PORT = process.env.PORT || 3000;
 const BASE_URL = (process.env.APP_URL || "http://localhost")+":"+PORT;
-const APP_NAME = process.env.APP_NAME || "Reward X";
+const APP_NAME = process.env.APP_NAME || "Node Startup";
 
 module.exports = {
   port: PORT,
